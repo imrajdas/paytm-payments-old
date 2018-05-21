@@ -3,7 +3,7 @@
   "description": "login backend module",
   "version": "0.0.1",
   "engines": {
-    "node": "0.10.24",
+    "node": "8.04",
     "npm": "2.14.0"
   },
   "scripts": {
@@ -28,7 +28,7 @@
     "url": "git+https://github.com/imrajdas/paytm-payments.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Raj Das",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/imrajdas/paytm-payments/issues"
