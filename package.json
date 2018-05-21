@@ -2,10 +2,6 @@
   "name": "paytm-payment",
   "description": "login backend module",
   "version": "0.0.1",
-  "engines": {
-    "node": "8.0",
-    "npm": "2.14.0"
-  },
   "scripts": {
     "start": "node ./bin/www"
   },
