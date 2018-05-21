@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Merchant Check Out Page</title>
+<meta name="GENERATOR" content="Evrsoft First Page">
+</head>
+<body>
+<!-- Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+<!-- Script -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#user-submit').click(function () {
+			alert('Are you sure to submit');
+		});
+		$('.ui.checkbox').checkbox();
+	});
+</script>
+<style>
+	body{
+		margin-top: 0px;
+		margin-left: 600px;
+		margin-right: 600px;
+		margin-bottom: 300px;
+	}
+</style>
+<body>
+	<center><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" width="400px" hieght="400px" alt="paytm-logo"></center>
+	<div class="ui form">
+		<div class="ui header">
+				<h2>Pay with Paytm</h2>
+				<p>Patym gateway for Merchant</p><hr>
+		</div>
+		<form action="/" class="ui form" method="post" id="form1">
+			<div class="field">
+				<label>OrderId*</label>
+				<input id="ORDER_ID" tabindex="1" maxlength="20" size="20" name="ORDER_ID" autocomplete="off" placeholder="Enter your orderID">
+			</div>
+			<div class="field">
+				<label>CustId*</label>
+				<input id="CUST_ID" tabindex="2" maxlength="12" size="12" name="CUST_ID" autocomplete="off" value="RAJDAS">
+			</div>
+			<div class="field">
+				<label>Industry Type*</label>
+				<input id="INDUSTRY_TYPE_ID" tabindex="4" maxlength="12" size="12" name="INDUSTRY_TYPE_ID" autocomplete="off" value='<%= config.INDUSTRY_TYPE_ID %>'>		  
+			</div>
+			<div class="field">
+				<label>Channel*</label>
+				<input id="CHANNEL_ID" tabindex="4" maxlength="12" size="12" name="CHANNEL_ID" autocomplete="off" value='<%= config.CHANNEL_ID %>'>
+			</div>
+			<div class="field">
+				<label>Amount*</label>
+				<input title="TXN_AMOUNT" tabindex="10" type="text" name="TXN_AMOUNT" value="1">
+			</div>
+			<div class="field">
+				<label>MID</label>
+				<input title="MID" tabindex="10" type="text" name="MID"	value='<%= config.MID %>'>		 
+			</div>
+			<div class="field">
+				<label>WEBSITE</label>
+				<input title="WEBSITE" tabindex="10"
+				type="text" name="WEBSITE"
+				value='<%= config.WEBSITE %>'>
+			</div>
+			<div class="field">
+				<label>PAYTM MERCHANT KEY</label>
+				<input title="WEBSITE" tabindex="10" type="text" name="PAYTM_MERCHANT_KEY" value='<%= config.PAYTM_MERCHANT_KEY %>'>
+			</div>
+			<div class="field">
+				<div class="ui checkbox">
+				<input type="checkbox" tabindex="0" class="hidden">
+				<label>I agree to the Terms and Conditions</label>
+			</div>
+			<h6>* are the mandatory fields</h6>
+			<button class="ui primary button" type="submit"id ="user-submit">Pay with Paytm</button>
+		</form>
+	</div>
+	<br><br><hr>
+	<div class="ui footer">
+		<h3>Created and maintain by <a href="http://www.rajdas.in">Raj Babu Das</a></h3>
+	</div>
+</body>
+</html>

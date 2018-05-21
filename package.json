@@ -1,0 +1,37 @@
+{
+  "name": "paytm-payment",
+  "description": "login backend module",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.24",
+    "npm": "2.14.0"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "cron": "^1.1.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-myconnection": "^1.0.4",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "nodemailer": "0.7.1"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrajdas/paytm-payments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imrajdas/paytm-payments/issues"
+  },
+  "homepage": "https://github.com/imrajdas/paytm-payments#readme"
+}

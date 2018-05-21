@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Paytm Response</title>
+<meta name="GENERATOR" content="Evrsoft First Page">
+</head>
+<body>
+<!-- Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+<!-- Script -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#user-submit').click(function () {
+			alert('Are you sure to submit');
+		});
+		$('.ui.checkbox').checkbox();
+	});
+</script>
+<style>
+	body{
+		margin-top: 0px;
+		margin-left: 600px;
+		margin-right: 600px;
+		margin-bottom: 300px;
+	}
+</style>
+<body>
+	<% if (restdata == 'success') { 	%>
+		<center><h1>Transaction Successfull</h1><br><br></center>
+			<% }else { %>
+		<center><h1>Transaction unsuccesfull</h1><br><br></center>
+	<% } %>
+	<form method="post" class="ui form" name="f1"> 
+		<% for (name in paramlist) { %>
+			<label><%= name %></label>
+			<input id='<%= name %>'tabindex="1" maxlength="30" size="30" name='<%= name %>' autocomplete="off" value='<%= paramlist[name] %>'>
+		<%}%>
+	</form>
+	<br><br><hr>
+	<div class="ui footer">
+		<h3>Created and maintain by <a href="http://www.rajdas.in">Raj Babu Das</a></h3>
+	</div>
+</body>
+</html>
