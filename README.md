@@ -3,7 +3,7 @@
 
 **LIVE URL** https://paytm-pay.herokuapp.com/
 
-##Installation
+## Installation
 ```
 1. npm install
 2. configure mid and merchant key in the /config/confif.js file
