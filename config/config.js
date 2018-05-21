@@ -1,7 +1,7 @@
 'use strict';
-var MID = ''; //Enter your MID
+var MID = ''; // Enter your MID
 var PAYTM_ENVIORMENT = 'TEST';   // PROD FOR PRODUCTION
-var PAYTM_MERCHANT_KEY = ''; // Enter your Merchant key
+var PAYTM_MERCHANT_KEY = ''; // Enter you Merchant key
 var WEBSITE = 'WEB_STAGING';
 var CHANNEL_ID =  'WEB';
 var INDUSTRY_TYPE_ID = 'Retail';

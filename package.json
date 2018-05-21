@@ -6,6 +6,9 @@
     "node": "0.10.24",
     "npm": "2.14.0"
   },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
     "async": "^1.5.2",
     "body-parser": "^1.15.0",
@@ -20,9 +23,6 @@
   },
   "main": "app.js",
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/imrajdas/paytm-payments.git"
